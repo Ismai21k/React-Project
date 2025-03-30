@@ -1,25 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import Nabvar  from './nabvar';
 
 function App() {
-  return (
+  const name = " Ismail kabir";
+  const age = 23;
+  const country = "Nigeria";
+  const city = "Kaduna";
+  const hobbies = [" Reading", " Writing", " Coding"];
+
+  return(
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="content">
+        <Nabvar />
+        <h1>App component</h1>
+        <h3>Nmae:{name}</h3>
+        <p>Age:{ age}</p>
+        <p>Hobbies:{hobbies}</p>
+        <p>City:{city}</p>
+        <p>Country:{country}</p>
+        <p>{ Math.random() * 10 }</p>
+        <br />
+        <a href="https://learn.microsoft.com/en-gb/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7.5" target='blank'>Execution policy</a>
+      </div>
     </div>
-  );
-}
+  )
+};
 
 export default App;
