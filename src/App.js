@@ -27,6 +27,7 @@ a maximum count limit of 10.*/
     };
 
     const decrease = () => {
+      // Decrease the count value by 1 and ensure it doesnt go below 0
       if (countValue > 0) {
         setCountValue(countValue - 1)
       }
